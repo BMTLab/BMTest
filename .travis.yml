@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 5.0.2
+solution: BMTest.sln
+before_script:
+  - dotnet restore
+script:
+  - dotnet build BMTest.sln -c Release
+  - dotnet test BMTest.sln

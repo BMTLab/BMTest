@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta lang="ru-RU">
+    <meta translate="yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta name="author" content="BMTLab">
+    <meta name="description" content="Testing students app">
+    <meta name="keywords" content="BMTest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=yes, minimal-ui, user-scalable=no">
+    <title>BMTest</title>
+    <base href="/" />
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/BMTest.App.Web.styles.css" />
+</head>
+
+<body>
+
+<script>
+    let script = document.createElement("script");
+
+    script.src = "_framework/blazor.webassembly.js";
+    document.head.append(script);
+
+    script.onload = function() {
+        console.log("WebAssembly was loaded successfully");
+    };
+
+    script.onerror = function () {
+        console.log("WebAssembly failed to load");
+        setTimeout(function () {
+                document.location.reload(true);
+            }, 2000
+        );
+    };
+</script>
+
+
+<app>Loading...</app>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
+
+</body>
+</html>
