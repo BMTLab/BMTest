@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
     <PropertyGroup>
         <LangVersion>9</LangVersion>
@@ -22,11 +22,11 @@
     
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-        <ErrorReport>send</ErrorReport>
-        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-        <DebugType>full</DebugType>
-        <DebugSymbols>true</DebugSymbols>
-        <DefineConstants>TRACE</DefineConstants>
+<!--        <ErrorReport>send</ErrorReport>-->
+<!--        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>-->
+<!--        <DebugType>full</DebugType>-->
+<!--        <DebugSymbols>true</DebugSymbols>-->
+<!--        <DefineConstants>TRACE</DefineConstants>-->
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Staging|AnyCPU'">

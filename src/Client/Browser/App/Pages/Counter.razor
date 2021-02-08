@@ -13,6 +13,16 @@
 	private int _currentCount;
 
 
+	#region Overrides of ComponentBase
+	protected override async Task OnInitializedAsync()
+	{
+		#if DEBUG
+		await Task.Delay(5000);
+		#endif
+	}
+	#endregion
+
+
 	private void IncrementCount()
 	{
 		_currentCount++;
